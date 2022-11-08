@@ -1,0 +1,42 @@
+<form class="form-control" action="/register" method="POST">
+    <h2>Cadastro</h2>
+    <div class="box">
+        <label for="client">Cliente</label>
+        <input type="text" name='client' placeholder="Digite seu nome..." required="true">
+    </div>
+    <div class="box">
+        <label for="container">Contêiner</label>
+        <input type="text" name='container' placeholder="Digite 4 letras e 7 números. Ex: TEST1234567..." required="true">
+    </div>
+    <div class="box">
+        <label for="type">Tipo</label>
+        <input type="text" name='type' placeholder="Digite ex: 20/40..." required="true">
+    </div>
+    <div class="box">
+        <label for="status">Status</label>
+        <input type="text" name='status' placeholder="Digite ex: vazio ou cheio..." required="true">
+    </div>
+    <div class="box">
+        <label for="category">Categoria</label>
+        <input type="text" name='category' placeholder="Digite ex: importação ou exportação..." required="true">
+    </div>
+    <h2>Movimentações</h2>
+    <div class="box box3">
+        <p>Obs: No campo de tipo de movimentação, digite uma dessas opções abaixo:</p>
+        <p>1-embarque, 2-descarga, 3-gate in, 4-gate
+        out, 5-reposicionamento, 6-pesagem, 7-scanner</p>
+    </div>
+    <div class="box">
+        <label for="movements">Movimentação</label>
+        <input type="text" name='movements' placeholder="Digite o tipo de movimentação..." required="true">
+    </div>
+    <div class="box">
+        <label for="hourStart">Hora de inicio</label>
+        <input type="text" name='hourStart' placeholder="Digite seu nome..." required="true">
+    </div>
+    <div class="box">
+        <label for="hourEnd">Hora do fim</label>
+        <input type="text" name='hourEnd' placeholder="Digite seu nome..." required="true">
+    </div>
+    <input class="btn" type="submit" value="Cadastrar">
+</form>

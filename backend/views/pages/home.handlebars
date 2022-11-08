@@ -1,0 +1,27 @@
+<h2>Relatórios de Movimentações</h2>
+<div class="container">
+    {{#each dataContainer}}
+        <div class="item">
+            <p><span>Cliente:</span> {{this.client}}</p>
+            <p><span>Hora do inicio:</span> {{this.hourStart}}</p>
+            <p><span>Hora do fim:</span> {{this.hourEnd}}</p>
+            <p><span>Tipo de Movimentação:</span> {{this.movements}}</p>
+            <div class="action">
+                <form action="/client/delete/{{this.id}}" method="POST">
+                    <input type="submit" value="excluir">
+                </form>
+            </div>
+        </div>
+    {{/each}}
+    
+</div>
+
+        <div class=" item2">
+        <h1>Total de Importação/Exportação</h1>
+        {{#each dataContainer}}
+            <p><span>{{this.id}}-Categoria:</span>
+            ------------------------------------------------------------------------------------------------ {{this.category}}</p>
+        {{/each}}   
+        </div>
+   
+    
